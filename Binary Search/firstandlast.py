@@ -1,5 +1,5 @@
 #This python program is to find the first occurance and the last occurance of a number in an array. 
-#For example, target = 5 appears first at 6th index and last at 10th index so out output must be [5,10]
+#For example, in the array below, target = 5 appears first at 6th index and last at 10th index so out output must be [5,10]
 
 nums = [1,1,2,2,3,3,5,5,5,5,5,6]
 target = 5

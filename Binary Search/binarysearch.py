@@ -44,6 +44,8 @@ def binarySearch(arr, target):
     
     return -1
 
+#The returnCieling function returns the target (if present in the array) or the cieling value i.e. nearest value heigher than the target value
+
 def returnCieling(arr, target):
     start = 0
     end = len(arr)
@@ -57,6 +59,8 @@ def returnCieling(arr, target):
         else:
             return mid
     return arr[start]
+
+#The returnFloor function returns the target (if present in the array) or the floor value i.e. nearest value lower than the target value
 
 def returnFloor(arr, target):
     start = 0
