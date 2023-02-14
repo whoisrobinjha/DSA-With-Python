@@ -9,7 +9,7 @@ def find_element_in_rotated_array(arr, target):
         if arr[mid] == target:
             return mid
         if arr[start] <= arr[mid]:
-            if arr[start] <= target and target <= arr[mid]:
+            if arr[start] <= target and target < arr[mid]:
                 end = mid - 1
             else:
                 start = mid + 1
@@ -18,8 +18,8 @@ def find_element_in_rotated_array(arr, target):
                 start = mid + 1
             else:
                 end = mid - 1
-    return 0
+    return -1
 
-arr = [5,6,7,1,2,3,4]
-target = 6
+arr = [7,1,2,3,4,5,6]
+target = 1
 print(find_element_in_rotated_array(arr, target))
