@@ -29,6 +29,7 @@ class BinarySearchTree(object):
             print(root.val)
             self.pre_order_place(root.l_child)
             self.pre_order_place(root.r_child)
+            
     def post_order_place(self, root):
         if not root:
             return None
